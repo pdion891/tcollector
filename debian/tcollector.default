@@ -1,12 +1,12 @@
 # List of comma-seperated TSD hosts (host:port)
-#TSD_HOSTS="127.0.0.1:4242"
+TSD_HOSTS="169.254.0.1:4242"
 
 #COLLECTOR_PATH=/usr/lib/tcollector/collectors
 #LOGFILE=/var/log/tcollector.log
 #PIDFILE=/var/run/tcollector.pid
 
-#DEDUP_INTERVAL=600
-#EVICT_INTERVAL=6000
+DEDUP_INTERVAL=600
+EVICT_INTERVAL=6000
 
 #RUN_AS_USER=tcollector
 #RUN_AS_GROUP=tcollector
@@ -26,9 +26,9 @@
 #EXTRA_TAGS="dc=mydatacenter othertag=somevalue"
 
 # Logfile rotation settings
-#LOGFILE_MAX_BYTES=67108864
-#LOGFILE_BACKUP_COUNT=0
+LOGFILE_MAX_BYTES=671088
+LOGFILE_BACKUP_COUNT=0
 
 # Disconnect and reconnect to TSD after roughly X seconds (primarily for RRDNS
 # load balancing).  Defaults to 0 (stay connected)
-#RECONNECT_INTERVAL=0
+RECONNECT_INTERVAL=0
